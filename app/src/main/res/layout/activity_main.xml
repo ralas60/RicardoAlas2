@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B488E"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textColor="#120E0E"
+        android:textColorHighlight="#120B0B"
+        android:textColorHint="#A39B9B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/bt_mostrar"
+        android:layout_width="253dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="220dp"
+        android:text="Mostrar"
+        app:backgroundTint="#22284A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_guardar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_guardar"
+        android:layout_width="253dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="412dp"
+
+        android:text="Guardar"
+        app:backgroundTint="#22284A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_apellido"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:shadowColor="#F4F4F4"
+        android:textColor="#120E0E"
+        android:textColorHighlight="#120B0B"
+        android:textColorHint="#A39B9B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+    <EditText
+        android:id="@+id/et_contrasena"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#A39B9B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_apellido" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="317dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desarrollado por: Ricardo Alas"
+        android:textColor="#E3D6D6"
+        android:textColorHint="#A39B9B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_mostrar"
+        app:layout_constraintVertical_bias="0.388" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
